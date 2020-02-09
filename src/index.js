@@ -24,6 +24,6 @@ const WhenIndex = Math.floor(Math.random()*whenArr.length);
 document.getElementById('img').src = imgObj[imgToFind(whoArr[WhoIndex])]
 document.getElementById("excuse").innerHTML = `${whoArr[WhoIndex]} ${whatArr[WhatIndex]} my homework ${whenArr[WhenIndex]}`} 
 document.getElementById('button').addEventListener("click", click);
-
+npm 
 
 
