@@ -1,3 +1,6 @@
+import {addingConsoleLog} from "./JS/consoleLog";
+import './style/main.css';
+
 let whoArr = ['the dog','my grandma','his turtle','my bird'];
 let whatArr = ['eat','pissed','crushed','broked'];
 let whenArr = ['before the class','right in time','when I finished','during my lunch','while I was praying'];
@@ -16,7 +19,7 @@ const WhenIndex = Math.floor(Math.random()*whenArr.length);
     const imgToFind = (words) => {
         const wordArr = words.split(' ');
         const word = () => {
-                for( imgName in imgObj) {
+                for(let imgName in imgObj) {
                 const response = wordArr.find(word => word === imgName);
                 if(response){return response} }};
         return word() };
@@ -24,6 +27,6 @@ const WhenIndex = Math.floor(Math.random()*whenArr.length);
 document.getElementById('img').src = imgObj[imgToFind(whoArr[WhoIndex])]
 document.getElementById("excuse").innerHTML = `${whoArr[WhoIndex]} ${whatArr[WhatIndex]} my homework ${whenArr[WhenIndex]}`} 
 document.getElementById('button').addEventListener("click", click);
-npm 
+addingConsoleLog()
 
 
